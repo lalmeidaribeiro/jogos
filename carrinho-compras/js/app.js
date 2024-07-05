@@ -4,10 +4,15 @@ function adicionar(){
   let nomeProduto = produto.split('-')[0]; //split serpar as springs em arrays - pega a posição split('-')[0]; 
   let valorUnitario = parseFloat(produto.split('R$')[1]);
 
-    console.log(produto);
-    console.log(quantidadeItens);
-    console.log(nomeProduto);
-    console.log(valorUnitario);
+  //Calculo preco dos produtos
+  let preco = quantidadeItens * valorUnitario;
+
+  //Adicioanr produtos ao carrinho
+  let carrinho = document.getElementById('lista-produtos'); //sesão que representa o carrinho
+
+  carrinho.innerHTML =`<section class="carrinho__produtos__produto">
+        <span class="texto-azul">${quantidadeItens}x</span> ${nomeProduto} <span class="texto-azul">R$${valorUnitario}</span>
+    </section>`;
 
 }
 
