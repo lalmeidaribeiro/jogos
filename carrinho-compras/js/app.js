@@ -1,3 +1,5 @@
+let totalCarrinho = 0;
+
 function adicionar(){
   let produto = document.getElementById('produto').value;
   let quantidadeItens = parseInt(document.getElementById('quantidade').value);
@@ -14,6 +16,11 @@ function adicionar(){
         <span class="texto-azul">${quantidadeItens}x</span> ${nomeProduto} <span class="texto-azul">R$${valorUnitario}</span>
     </section>`;
    console.log(preco);
+
+  //Aatualizar o valor total o valor total
+  totalCarrinho = totalCarrinho + preco;
+  let campoTotal = document.getElementById('valor-total');
+  campoTotal.textContent = `R$ ${totalCarrinho}`;
 
 }
 
