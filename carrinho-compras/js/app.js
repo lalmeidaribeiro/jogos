@@ -1,5 +1,5 @@
 let totalCarrinho = 0;
-
+document.getElementById('lista-produtos').innerHTML =''; //Inicializa o carrinho vazio
 function adicionar(){
   let produto = document.getElementById('produto').value;
   let quantidadeItens = parseInt(document.getElementById('quantidade').value);
