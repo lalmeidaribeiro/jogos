@@ -1,5 +1,8 @@
 let totalCarrinho = 0;
-document.getElementById('lista-produtos').innerHTML =''; //Inicializa o carrinho vazio
+
+document.getElementById('lista-produtos').innerHTML = '';
+document.getElementById('valor-total').textContent = 'R$ -';
+
 function adicionar(){
   let produto = document.getElementById('produto').value;
   let quantidadeItens = parseInt(document.getElementById('quantidade').value);
@@ -17,11 +20,13 @@ function adicionar(){
     </section>`;
    console.log(preco);
 
-  //Aatualizar o valor total o valor total
+  //Atualizar o valor total o valor total
   totalCarrinho = totalCarrinho + preco;
   let campoTotal = document.getElementById('valor-total');
   campoTotal.textContent = `R$ ${totalCarrinho}`;
 
+  //zera o campo qntidade 
+  document.getElementById('quantidade').value = 0;
 }
 
 function limpar(){
