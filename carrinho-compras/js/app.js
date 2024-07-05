@@ -1,7 +1,5 @@
-let totalCarrinho = 0;
-
-document.getElementById('lista-produtos').innerHTML = '';
-document.getElementById('valor-total').textContent = 'R$ -';
+let totalCarrinho;
+limpar();
 
 function adicionar(){
   let produto = document.getElementById('produto').value;
@@ -30,7 +28,9 @@ function adicionar(){
 }
 
 function limpar(){
-
+    totalCarrinho = 0;
+    document.getElementById('lista-produtos').innerHTML = '';
+    document.getElementById('valor-total').textContent = 'R$ -';
 }
 
 
