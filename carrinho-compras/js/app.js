@@ -9,10 +9,11 @@ function adicionar(){
 
   //Adicioanr produtos ao carrinho
   let carrinho = document.getElementById('lista-produtos'); //sesão que representa o carrinho
-
-  carrinho.innerHTML =`<section class="carrinho__produtos__produto">
+ 
+  carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
         <span class="texto-azul">${quantidadeItens}x</span> ${nomeProduto} <span class="texto-azul">R$${valorUnitario}</span>
     </section>`;
+   console.log(preco);
 
 }
 
