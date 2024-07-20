@@ -35,3 +35,8 @@ function embaralhaSorteio(lista) {
     }
 }
 
+function reiniciar(){
+    sorteados = [];
+    document.getElementById('lista-amigos').innerHTML = '';
+    document.getElementById('lista-sorteio').innerHTML = '';
+}
