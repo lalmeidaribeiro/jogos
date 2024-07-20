@@ -2,12 +2,16 @@ function comprar(){
     let tipo = document.getElementById("tipo-ingresso");
     let qntReservada = parseInt(document.getElementById("qtd").value);
 
-    if(tipo.value == 'pista'){
-        comprarPista(qntReservada);
-    }else if(tipo.value == 'superior'){
-        comprarSuperior(qntReservada);
+    if (qntReservada < 0 ){
+        alert("Erro número inválido, por favor insira um número positivo!");
     }else{
-        comprarInferior(qntReservada);
+        if(tipo.value == 'pista'){
+            comprarPista(qntReservada);
+        }else if(tipo.value == 'superior'){
+            comprarSuperior(qntReservada);
+        }else{
+            comprarInferior(qntReservada);
+        }
     }
 }
 
