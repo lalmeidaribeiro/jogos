@@ -8,7 +8,7 @@
 
 - `1° Projeto: Sorteador de números`
   <p>Neste projeto, o usuário deve inserir a quantidade de números a sortear e informar um intervalo para sorteio com o número mínimo e o número máximo. De acordo com essas informações, o programa escolhe aleatoriamente um número quando o botão "Sortear" é selecionado. Para isso, utilizei a função Math.random(). Ao selecionar o botão "Reiniciar", todos os campos são limpos e o usuário pode sortear novamente uma sequência de números aleatórios. Abaixo, uma imagem ilustrativa do projeto:</p> 
-  ![image](https://github.com/user-attachments/assets/a7edcdfa-6680-4ec6-b3ac-d1cac1484aec)
+ ![image](https://github.com/user-attachments/assets/07254df5-9957-4897-ba5a-7d0cdfc059ea)
 
 - `2° Projeto: Aluga Games`
   <p>Este projeto simula uma locadora de jogos que permite alugar e devolver os jogos disponíveis. O principal objetivo era construir a funcionalidade que, ao clicar no jogo disponível, o texto do botão muda para "Devolver" e a capa do jogo fica mais escura, indicando que ele está alugado. Ao clicar em "Devolver", o botão retorna para o texto "Alugar". Segue imagem do projeto desenvolvido</p>
