@@ -20,7 +20,7 @@
 
 - `4° Projeto: Ingresso online`
   <p>Este projeto simula a funcionalidade da compra de ingressos online. O usuário deve escolher o tipo de ingresso (Pista, Cadeira Inferior ou Superior) e informar a quantidade de ingressos que deseja comprar. Abaixo temos a quantidade total de ingressos disponíveis. Ao selecionar o botão "Comprar", informando o tipo e quantidade de ingressos, o valor solicitado é subtraído do disponível. Conforme imagem abaixo</p>
-![image](https://github.com/user-attachments/assets/1b93e715-5fcf-47ed-9444-542216f55440)
+![image](https://github.com/user-attachments/assets/5c814c7a-11ca-4fcb-a7fb-48471de69a6f)
 
 - `5° Projeto: Amigo secreto`
   <p>a ideia e gerar um lista para o amigo secreto onde o usuário pode inserir um nome por vez e uma lista com diversos nomes de amigos é gerada aleatoriamente. Quando clicamos em "Sortear", a lista de quem tirou quem é gerada. Ao clicar em "Reiniciar", tudo é redefinido e podemos começar um novo sorteio. Para este projeto, realizei algumas validações no campo, como impedir a inserção de nomes duplicados, segue imagem ilustrativa:</p>
