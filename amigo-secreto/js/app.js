@@ -2,6 +2,18 @@ let sorteados = [];
 
 function adicionar(){
     let nomeSorteio = document.getElementById('nome-amigo').value;
+    //Validação do campo nome-amigo nulo 
+    if(nomeSorteio == ''){
+        alert('Atenção, você não informou o nome para o sorteio');
+        return;
+    }
+
+    //Validando nome duplicado 
+    if(sorteados.includes(nomeSorteio)){
+        alert('Esse nome já foi adicionado.. Por favor, insira o sobrenome do amigo');
+        return;
+    }
+
     let listaAmigos = document.getElementById('lista-amigos');
     sorteados.push(nomeSorteio);
 
@@ -14,6 +26,12 @@ function adicionar(){
 }
 
 function sortear(){
+    //Validação dos número de amigos para o soteio 
+    if(sorteados.length < 4){
+        alert('Adicione pelo menos 4 amigos para o sorteio!');
+        return;
+    }
+
     embaralhaSorteio(sorteados);
     let resultadoSorteio = document.getElementById('lista-sorteio');
 
